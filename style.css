@@ -37,7 +37,7 @@ body {
 }
 
 .input-group input {
-  width: 100%;
+  width: 90%;
   padding: 12px 35px 12px 10px;
   border: none;
   border-radius: 5px;
@@ -67,23 +67,25 @@ body {
 .btn-container {
   position: relative;
   height: 40px;
+  text-align: center;
 }
 
-button#login-btn {
+#login-btn {
   background: #275efe;
   color: #fff;
   border: none;
   padding: 10px 30px;
   border-radius: 5px;
   cursor: pointer;
-  position: absolute;
-  transition: 0.3s;
+  position: relative;
+  transition: 0.3s ease;
 }
 
-.shift-left { left: 0; }
-.shift-right { right: 0; }
-.shift-top { top: -40px; }
-.shift-bottom { top: 40px; }
+/* Shift animations */
+.shift-left   { position: absolute; left: 0; top: 0; }
+.shift-right  { position: absolute; right: 0; top: 0; }
+.shift-top    { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); }
+.shift-bottom { position: absolute; top: 40px; left: 50%; transform: translateX(-50%); }
 
 .signup {
   font-size: 14px;
