@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legend Login Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+  <div class="login-box">
+    <div class="avatar"><i class="fas fa-user"></i></div>
+    <h2>LOGIN</h2>
+    <p class="error-msg" id="error-msg">Please fill the input fields before proceeding</p>
+    <form>
+      <div class="input-group">
+        <input type="text" id="uname" placeholder="Username" />
+        <i class="fa fa-user icon"></i>
+      </div>
+      <div class="input-group">
+        <input type="password" id="pass" placeholder="Password" />
+        <i class="fa fa-lock icon"></i>
+      </div>
+      <div class="options">
+        <label><input type="checkbox" /> Remember me</label>
+        <a href="#">Forget Password?</a>
+      </div>
+      <div class="btn-container">
+        <button id="login-btn">Login</button>
+      </div>
+      <p class="signup">Don't have an Account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
